@@ -1,0 +1,55 @@
+=================================
+*Inf-Fid-GPT
+---------------------------------
+-domain:Heat
+-fold:0
+-h_dim:5
+-int_steps:2
+-solver:dopri5
+-g_width:40
+-g_depth:2
+-f_width:40
+-f_depth:2
+-kernel:RBF
+-max_epochs:500
+-max_lr:0.01
+-min_lr:0.001
+-test_interval:10
+-device:cpu
+-verbose:False
+=================================
+
+=========================================
+             Epochs 0 
+=========================================
+
+### Loss=14385624.29091 ###
+
+### Eval train examples ###
+    - fid=8, rmse=1.02984, mae=1.02411
+    - fid=16, rmse=1.01762, mae=1.00076
+    - fid=32, rmse=1.02913, mae=1.01129
+    - fid=64, rmse=1.12420, mae=1.14579
+
+### Eval test examples ###
+    - fid=8, rmse=1.04710, mae=1.04072
+    - fid=16, rmse=1.03525, mae=1.02575
+    - fid=32, rmse=1.04794, mae=1.02973
+    - fid=64, rmse=1.17711, mae=1.11070
+=========================================
+             Epochs 10 
+=========================================
+
+### Loss=5403157.60271 ###
+
+### Eval train examples ###
+    - fid=8, rmse=0.98291, mae=0.97666
+    - fid=16, rmse=0.98798, mae=0.98384
+    - fid=32, rmse=0.99836, mae=0.99504
+    - fid=64, rmse=1.00189, mae=1.00039
+
+### Eval test examples ###
+    - fid=8, rmse=0.97498, mae=0.97532
+    - fid=16, rmse=0.98322, mae=0.98460
+    - fid=32, rmse=1.00619, mae=1.00712
+    - fid=64, rmse=1.05052, mae=1.04428
