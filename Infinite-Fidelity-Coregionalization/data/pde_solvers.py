@@ -7,6 +7,8 @@ from hdf5storage import loadmat
 
 from infras.randutils import *
 from infras.misc import *
+from subprocess import CalledProcessError
+
 
 from scipy.sparse import csc_matrix
 from scipy.sparse.linalg import spsolve

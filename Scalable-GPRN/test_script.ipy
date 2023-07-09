@@ -1,0 +1,74 @@
+# %load_ext autoreload
+# %autoreload 2
+# %matplotlib inline
+from sgprn import *
+import numpy as np
+import torch
+import torch.nn as nn
+
+from torch.optim import Adam
+from torch.optim.lr_scheduler import ReduceLROnPlateau
+
+import tensorly as tl
+
+from tqdm.auto import tqdm, trange
+
+import matplotlib.pyplot as plt
+
+# Set manual seed for reproducibility
+torch.manual_seed(0)
+
+# Set default tensor type
+torch.set_default_tensor_type(torch.DoubleTensor)
+
+# Set TensorLy backend
+tl.set_backend('pytorch')
+
+# Your ScalableGPRN class initialization and training code
+
+device = torch.device('cuda:0')
+
+Xtr = torch.tensor(np.load('Xtr.npy')).to(device)
+Xte = torch.tensor(np.load('Xte.npy')).to(device)
+ytr = torch.tensor(np.load('ytr.npy')).to(device)
+yte = torch.tensor(np.load('yte.npy')).to(device)
+
+input_dim = Xtr.shape[1]
+N = Xtr.shape[0]
+
+model = ScalableGPRN(
+    input_dim,
+    rank=20,
+    meshes=[64,64],
+    ntr=N,
+    jitter=1e-5,
+).to(device)
+
+
+max_epochs = 10000
+
+optimizer = Adam(model.parameters(), lr=1e-3)
+scheduler = ReduceLROnPlateau(optimizer, 'min', min_lr=1e-4)
+
+for ie in tqdm(range(max_epochs)):
+
+    loss = model.eval_nelbo(Xtr, ytr)
+
+    if ie%200 == 0:
+        with torch.no_grad():
+
+            rmse_tr = model.eval_rmse(Xtr, ytr, Xtr, ytr)
+            rmse_te = model.eval_rmse(Xtr, ytr, Xte, yte)
+
+            print('epoch={}, nelbo={:.5f}, log_tau={:.5f}'.format(ie, loss.item(), model.log_tau.item()))
+            print('  - nrmse_tr={}'.format(rmse_tr))
+            print('  - nrmse_te={}'.format(rmse_te))
+
+
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
+
+
+Ys = model.forward_samples(Xtr, ytr, Xte, ns=5)
+
