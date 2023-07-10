@@ -23,7 +23,7 @@ for fold in range(1, 6):
     if method == "ifc_ode":
         run_command([
             "python", "main.py",
-            "--config=configs/" + domain_name + "/exp_ifc_ode.py",
+            "--config=configs/" + domain_name + "/exp_sf.py",
             "--workdir=" + save_path,
             "--config.training.epochs=" + str(epochs),
             "--config.model.rank=" + str(rank),
