@@ -21,7 +21,7 @@ data/
 ```
 
 # Examples
-Here are some examples of how to use the Data Generator:
+Here are some examples of how to use the Data Generator with Heat equation, but you can also try different equation(e.g. Burgers, Poisson, NavierStockURec):
 ```
 python generate.py -domain=Heat
 ```
