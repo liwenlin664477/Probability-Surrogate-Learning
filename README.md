@@ -64,3 +64,15 @@ cd Data-Generator
 python generate.py -domain=(Heat, Poisson, Burgers, TopOpt, NavierStockPRec/URec/VRec)
 ```
 More information and instructions are in Data-Generator README.md.
+
+# Projects visualization
+We have also made the result or loss visualization in all the projects. You are welcome to play with them by running jupyter notebook.
+
+
+# License
+IFC is released under the MIT License, please refer the LICENSE for details.\
+
+# Getting Involved
+Feel free to submit Github issues or pull requests. Welcome to contribute to our project!
+
+To contact us, never hestitate to send an email to u1327012@umail.utah.edu or liwen0160@gmail.com
