@@ -84,15 +84,15 @@ def load_from_h5(h5fname):
 
     for m in range(D['Nf']):
 
-        Xtr = np.array(hf.get('Xtr/f'+str(m)))
-        ytr = np.array(hf.get('ytr/f'+str(m)))
-        ytr_ground = np.array(hf.get('ytr_ground/f'+str(m)))
-        ytr_interp = np.array(hf.get('ytr_interp/f'+str(m)))
+        Xtr = np.array(hf.get('X_train/fidelity_'+str(m)))
+        ytr = np.array(hf.get('y_train/fidelity_'+str(m)))
+        ytr_ground = np.array(hf.get('y_train_ground/fidelity_'+str(m)))
+        ytr_interp = np.array(hf.get('y_train_interp/fidelity_'+str(m)))
 
-        Xte = np.array(hf.get('Xte/f'+str(m)))
-        yte = np.array(hf.get('yte/f'+str(m)))
-        yte_ground = np.array(hf.get('yte_ground/f'+str(m)))
-        yte_interp = np.array(hf.get('yte_interp/f'+str(m)))
+        Xte = np.array(hf.get('X_test/fidelity_'+str(m)))
+        yte = np.array(hf.get('y_test/fidelity_'+str(m)))
+        yte_ground = np.array(hf.get('y_test_ground/fidelity_'+str(m)))
+        yte_interp = np.array(hf.get('y_test_interp/fidelity_'+str(m)))
         
         print(Xtr.shape)
         print(ytr.shape)

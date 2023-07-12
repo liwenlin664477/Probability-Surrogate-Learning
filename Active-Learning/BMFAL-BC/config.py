@@ -7,7 +7,7 @@ class DefaultConfig(object):
     verbose=False
     
     torch_type = torch.float
-    placement = 'cuda:0'
+    placement = 'cpu'
     
     ##################
     #  model config  #

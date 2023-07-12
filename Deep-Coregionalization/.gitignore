@@ -1,0 +1,17 @@
+.idea
+.ipynb
+.DS_Store
+.ipynb_checkpoints/
+__pycache__
+*.pyc
+*.hkl
+*.npy
+.Trash-0
+__dump__
+__res*
+__log__
+data_mfgp
+exp_data_dc/data_dc
+exp_data
+exp_data_dc
+DRC-pde-data

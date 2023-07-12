@@ -37,10 +37,10 @@
 
 trap "kill 0" EXIT
 
-python generate.py -domain='Heat2' -Ntrain=[20,5] -Ntest=[512,512] -trial=1 &
-python generate.py -domain='Heat2' -Ntrain=[10,5] -Ntest=[512,512] -trial=7 &
-python generate.py -domain='Heat2' -Ntrain=[20,2] -Ntest=[512,512] -trial=11 &
-python generate.py -domain='Heat2' -Ntrain=[10,2] -Ntest=[512,512] -trial=16 &
-python generate.py -domain='Heat2' -Ntrain=[20,10] -Ntest=[512,512] -trial=21 &
+python ../generate.py -domain='Heat2' -Ntrain=[20,5] -Ntest=[512,512] -trial=1 &
+python ../generate.py -domain='Heat2' -Ntrain=[10,5] -Ntest=[512,512] -trial=7 &
+python ../generate.py -domain='Heat2' -Ntrain=[20,2] -Ntest=[512,512] -trial=11 &
+python ../generate.py -domain='Heat2' -Ntrain=[10,2] -Ntest=[512,512] -trial=16 &
+python ../generate.py -domain='Heat2' -Ntrain=[20,10] -Ntest=[512,512] -trial=21 &
 
 wait

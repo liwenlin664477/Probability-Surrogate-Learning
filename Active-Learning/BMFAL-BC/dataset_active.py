@@ -82,15 +82,15 @@ def load_from_h5f(h5fname):
         
         for m in range(M):
 
-            D['X_train_list'].append(np.array(hf.get('Xtr/f'+str(m))))
-            D['y_train_list'].append(np.array(hf.get('ytr/f'+str(m))))
-            D['y_train_ground_list'].append(np.array(hf.get('ytr_ground/f'+str(m))))
-            
-            #print(np.array(hf.get('ytr_ground/f'+str(m))).shape)
-                                
-            D['X_test_list'].append(np.array(hf.get('Xte/f'+str(m))))
-            D['y_test_list'].append(np.array(hf.get('yte/f'+str(m))))
-            D['y_test_ground_list'].append(np.array(hf.get('yte_ground/f'+str(m))))
+            D['X_train_list'].append(np.array(hf.get('X_train/fidelity_' + str(m))))
+            D['y_train_list'].append(np.array(hf.get('y_train/fidelity_' + str(m))))
+            D['y_train_ground_list'].append(np.array(hf.get('y_train_ground/fidelity_' + str(m))))
+
+            # print(np.array(hf.get('ytr_ground/f'+str(m))).shape)
+
+            D['X_test_list'].append(np.array(hf.get('X_test/fidelity_' + str(m))))
+            D['y_test_list'].append(np.array(hf.get('y_test/fidelity_' + str(m))))
+            D['y_test_ground_list'].append(np.array(hf.get('y_test_ground/fidelity_' + str(m))))
             
 #             cprint('b', np.array(hf.get('Xtr/f'+str(m))).shape)
 #             cprint('b', np.array(hf.get('ytr/f'+str(m))).shape)

@@ -8,7 +8,7 @@
 MAX_EPOCHS=10
 BATCH_SIZE=5
 HORIZON=20
-DEVICE='cuda:0'
+DEVICE='cpu'
     
 python run.py evaluation -heuristic 'GreedySubmod' -domain 'Poisson2' -M 2  -trial 1 \
     -input_dim_list [5,5] -output_dim_list [256,1024] -base_dim_list [32,32] \

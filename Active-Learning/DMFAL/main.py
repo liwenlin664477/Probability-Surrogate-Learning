@@ -31,7 +31,7 @@ import dataset_active as dataset
 # from model.BaseNet import AdaptiveBaseNet
 
 # from DeepMFNet import DeepMFNet
-from model.BatchDMFAL import BatchDMFAL
+# from model.BatchDMFAL import BatchDMFAL
 from model.MutualDMFAL import MutualDMFAL
 from model.PdvDMFAL import PdvDMFAL
 

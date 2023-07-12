@@ -1,0 +1,13 @@
+clear all;
+close all;
+addpath(genpath('../code'));
+load('./large_data_zhe.mat');
+Xtr = X.train{1};
+ytr = Y.train{1};
+Xte = X.test;
+yte = Y.test{1};
+k = 10;
+M1 = M;
+B1 = B;
+model = train_PcaFIGP_zhe(Xtr, ytr, Xte, yte, k, Y.mean, Y.std);
+fprintf('rmse = %g\n', model.rmse);

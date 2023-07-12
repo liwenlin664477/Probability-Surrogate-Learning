@@ -358,7 +358,7 @@ class ScalableGPRN(nn.Module):
 
 
 
-device = torch.device('cuda:0')
+device = torch.device('cpu')
 
 Xtr = torch.tensor(np.load('Xtr.npy')).to(device)
 Xte = torch.tensor(np.load('Xte.npy')).to(device)
