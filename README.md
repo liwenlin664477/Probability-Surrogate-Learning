@@ -57,3 +57,10 @@ You can easily run our code by running the following command:
 cd Infinite-Fidelity-Coregionalization
 bash test-ODE.sh/test-GPT.sh Heat 5 500 cuda:0 0 10
 ```
+# Data-Generator
+You can generate the solutions of the Heat, Poisson, Burgers, NavierStockURec by running the following command:
+```commandline
+cd Data-Generator
+python generate.py -domain=(Heat, Poisson, Burgers, TopOpt, NavierStockPRec/URec/VRec)
+```
+More information and instructions are in Data-Generator README.md.

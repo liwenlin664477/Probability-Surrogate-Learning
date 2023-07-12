@@ -208,7 +208,7 @@ class Helper():
 
 
 
-    def save_rmse(self, s0r0, s0r1, s1r0, s1r1, s0ll, s1ll):
+    def save_rmse(self, s0r0, s0r1, s1r0, s1r1):
         of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s0r0.csv'
         np.savetxt(of, s0r0, delimiter=',')
         of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s0r1.csv'
@@ -217,8 +217,8 @@ class Helper():
         np.savetxt(of, s1r0, delimiter=',')
         of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s1r1.csv'
         np.savetxt(of, s1r1, delimiter=',')
-        of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s0ll.csv'
-        np.savetxt(of, s0ll, delimiter=',')
-        of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s1ll.csv'
-        np.savetxt(of, s1ll, delimiter=',')
+        # of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s0ll.csv'
+        # np.savetxt(of, s0ll, delimiter=',')
+        # of = './k'+ str(self.k) + 'f' + str(self.n_fold)+'_s1ll.csv'
+        # np.savetxt(of, s1ll, delimiter=',')
 
