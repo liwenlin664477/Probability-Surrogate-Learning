@@ -1,4 +1,4 @@
-# IFHoGP-main
+# IFHoGP
 
 First: You need to install ml-collections by running
 ```
