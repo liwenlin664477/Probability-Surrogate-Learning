@@ -9,10 +9,9 @@ You can easily run our code by running the following command:
 cd IFHoGP-main
 ipython test_script.ipy
 ```
----
 Please cite our paper if you find it helpful :)
 ```commandline
-
+TBD
 ```
 
 ### [Scalable-GPRN(Scalable Gaussian Process Regression Networks)](https://arxiv.org/abs/2003.11489)
@@ -22,7 +21,6 @@ You can easily run our code by running the following command:
 cd Scalable-GRPN
 python sgprn.py
 ```
----
 Please cite our work if you would like to use the code
 ```commandline
 @inproceedings{ijcai2020-340,
@@ -56,7 +54,6 @@ python process-data-drc.py
 ```
 Therefore, you can copy the data from DRC-pde-data folder to exp_data_dc in Deep-Coregionalization.
 
----
 Please cite the paper if you find this code useful.
 ```commandline
 @article{
@@ -79,7 +76,6 @@ You can easily run our code by running the following command:
 cd Multi-Fidelity-High-Order-Gaussian-Processes-for-Physical-Simulation && cd DGP_hd
 python test.py
 ```
----
 If you find this useful, or if you use it in your work, please cite:
 ```
   @article{wang2020multi,
@@ -95,7 +91,6 @@ You can easily run our code by running the following command:
 cd Active-Learning && cd DMFAL && cd scripts && cd Poisson2
 bash run-Poisson2-pdv.sh
 ```
----
 Please cite our work if you would like to use the code
 ```commandline
 @misc{li2021deep,
@@ -114,7 +109,7 @@ You can easily run our code by running the following command:
 cd Active-Learning && cd BMFAL-BC
 bash experiment.sh
 ```
----
+
 Please cite our work if you would like to use the code
 ```commandline
 @article{li2021multi,
@@ -130,7 +125,7 @@ You can easily run our code by running the following command:
 cd Infinite-Fidelity-Coregionalization
 bash test-ODE.sh/test-GPT.sh Heat 5 500 cuda:0 0 10
 ```
----
+
 Please cite our paper if you find it helpful :)
 ```commandline
 @inproceedings{
