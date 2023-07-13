@@ -7,7 +7,7 @@ First of all, you need to download our [data](https://drive.google.com/file/d/1e
 You can easily run our code by running the following command:
 ```commandline
 cd IFHoGP-main
-ipython test_script.ipy
+python test_script.py
 ```
 Please cite our paper if you find it helpful :)
 ```commandline

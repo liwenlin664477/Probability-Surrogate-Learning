@@ -47,6 +47,14 @@ def main(argv):
     logger.info(config)
     logger.info('================================================')
 
+    print("Learning rate:", config.optim.learning_rate)
+    print("Weight decay:", config.optim.weight_decay)
+    print("Scheduler:", config.optim.scheduler)
+    print("Minimum learning rate:", config.optim.minimum_learning_rate)
+    print("config.training.epochs:", config.training.epochs)
+    print("config.testing.freq:", config.testing.freq)
+
+
     dataset = MFData(
         config,
         domain=config.domain,
@@ -60,6 +68,20 @@ def main(argv):
         ns_list_tr=config.data.ns_list_tr,
         ns_list_te=config.data.ns_list_te,
     )
+
+    # print(f"dataset = MFData(\n"
+    #       f"    config,\n"
+    #       f"    domain={config.domain},\n"
+    #       f"    fid_min={config.data.fid_min},\n"
+    #       f"    fid_max={config.data.fid_max},\n"
+    #       f"    t_min={config.data.t_min},\n"
+    #       f"    t_max={config.data.t_max},\n"
+    #       f"    target_fidelity={config.data.target_fidelity},\n"
+    #       f"    fid_list_tr={config.data.fid_list_tr},\n"
+    #       f"    fid_list_te={config.data.fid_list_te},\n"
+    #       f"    ns_list_tr={config.data.ns_list_tr},\n"
+    #       f"    ns_list_te={config.data.ns_list_te},\n"
+    #       f")")
 
     if config.model.name == 'hogp':
         run_hogp_2d(config, dataset, logger, (exp_log_workdir, exp_evals_workdir, exp_dicts_workdir))
