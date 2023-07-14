@@ -1,1 +1,0 @@
-The informative vector machine. Sparse Gaussian processes by information theoretic driven data point selection.
