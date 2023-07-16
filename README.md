@@ -64,7 +64,7 @@ Please cite our work if you would like to use the code
 }
 ```
 ### [High-Order Gaussian Process (HOGP)](https://arxiv.org/abs/2003.11489)
-This project represents one of the high order version of Scalable-GPRN, exhibiting certain dependencies within the Scalable-GPRN framework. We provide a visualization notebook as a reference for users:
+This project represents one of the high-order version of Scalable-GPRN, exhibiting certain dependencies within the Scalable-GPRN framework. We provide a visualization notebook as a reference for users:
 ```commandline
 cd Single-Fidelity/High-Order Gaussian-Process
 jupyter notebook Dev-HoGP-v1.ipynb
