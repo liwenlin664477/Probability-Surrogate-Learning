@@ -7,5 +7,5 @@ pip install ml-collections
 
 Second: You can test our code by running
 ```commandline
-ipython test_script.ipy
+python test_script.py
 ```
