@@ -1,0 +1,38 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 0 issues that require attention
+--------------------------------------------------------------------------------
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'DGP_hd_ll.py'
+ outputting to 'DGP_hd_ll_upgraded.py'
+--------------------------------------------------------------------------------
+
+32:18: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+34:18: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+75:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+76:22: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+83:20: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+84:20: INFO: Renamed 'tf.train.AdadeltaOptimizer' to 'tf.compat.v1.train.AdadeltaOptimizer'
+93:20: INFO: Renamed 'tf.Session' to 'tf.compat.v1.Session'
+93:38: INFO: Renamed 'tf.ConfigProto' to 'tf.compat.v1.ConfigProto'
+98:22: INFO: Renamed 'tf.global_variables_initializer' to 'tf.compat.v1.global_variables_initializer'
+175:24: INFO: Renamed 'tf.matrix_band_part' to 'tf.linalg.band_part'
+176:24: INFO: Renamed 'tf.matrix_band_part' to 'tf.linalg.band_part'
+177:22: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+225:22: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+238:25: INFO: Renamed 'tf.diag_part' to 'tf.linalg.tensor_diag_part'
+239:62: INFO: Renamed 'tf.log' to 'tf.math.log'
+314:20: INFO: Renamed 'tf.matrix_band_part' to 'tf.linalg.band_part'
+315:20: INFO: Renamed 'tf.matrix_band_part' to 'tf.linalg.band_part'
+316:18: INFO: Renamed 'tf.random_normal' to 'tf.random.normal'
+327:32: INFO: Renamed 'tf.log' to 'tf.math.log'
+327:39: INFO: Renamed 'tf.diag_part' to 'tf.linalg.tensor_diag_part'
+328:33: INFO: Renamed 'tf.log' to 'tf.math.log'
+328:40: INFO: Renamed 'tf.diag_part' to 'tf.linalg.tensor_diag_part'
+--------------------------------------------------------------------------------
+
