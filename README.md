@@ -63,7 +63,7 @@ Please cite our work if you would like to use the code
   url       = {https://doi.org/10.24963/ijcai.2020/340},
 }
 ```
-### High-Order Gaussian Process (HOGP)
+### [High-Order Gaussian Process (HOGP)](https://arxiv.org/abs/2003.11489)
 This project represents one of the high order version of Scalable-GPRN, exhibiting certain dependencies within the Scalable-GPRN framework. We provide a visualization notebook as a reference for users:
 ```commandline
 cd Single-Fidelity/High-Order Gaussian-Process
@@ -137,7 +137,7 @@ If you find this useful, or if you use it in your work, please cite:
   }
 ```
 
-### Deep Multi-Fidelity (DMF)
+### [Deep Multi-Fidelity (DMF)](http://proceedings.mlr.press/v89/zhe19a/zhe19a.pdf)
 To run the code:
 ```commandline
 cd Multi-Fidelity/Deep-Multi-Fidelity
