@@ -64,14 +64,27 @@ Please cite our work if you would like to use the code
 }
 ```
 ### High-Order Gaussian Process (HOGP)
-To run the code:
+This project represents one of the high order version of Scalable-GPRN, exhibiting certain dependencies within the Scalable-GPRN framework. We provide a visualization notebook as a reference for users:
 ```commandline
 cd Single-Fidelity/High-Order Gaussian-Process
-
+jupyter notebook Dev-HoGP-v1.ipynb
 ```
 Please cite the paper if you find this code useful.
 ```commandline
-
+@inproceedings{ijcai2020-340,
+  title     = {Scalable Gaussian Process Regression Networks},
+  author    = {Li, Shibo and Xing, Wei and Kirby, Robert M. and Zhe, Shandian},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  editor    = {Christian Bessiere},	
+  pages     = {2456--2462},
+  year      = {2020},
+  month     = {7},
+  note      = {Main track}
+  doi       = {10.24963/ijcai.2020/340},
+  url       = {https://doi.org/10.24963/ijcai.2020/340},
+}
 ```
 ---
 
@@ -128,11 +141,11 @@ If you find this useful, or if you use it in your work, please cite:
 To run the code:
 ```commandline
 cd Multi-Fidelity/Deep-Multi-Fidelity
-
+python test_script.py
 ```
 Please cite the paper if you find this code useful.
 ```commandline
-
+TBD
 ```
 ---
 
