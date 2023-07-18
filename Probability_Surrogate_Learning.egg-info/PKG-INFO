@@ -1,9 +1,22 @@
+Metadata-Version: 2.1
+Name: Probability-Surrogate-Learning
+Version: 1.0
+Summary: This is a comprehensive machine learning library, specifically tailored for surrogate learning and active learning.
+Home-page: https://github.com/liwenlin664477/Probability-Surrogate-Learning
+Author: Wenlin Li
+Author-email: u1327012@example.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
 # Probability-Surrogate-Learning
 This is a comprehensive machine learning library, specifically tailored for surrogate learning and active learning. Our objective is to provide a robust platform that empowers researchers and developers to seamlessly implement and experiment with these advanced machine learning techniques.
 
 You can directly install our library by running:
 ```commandline
-pip install Probability-Surrogate-Learning==1.0
+pip install Probability-Surrogate-Learning==0.1
 ```
 
 ---
