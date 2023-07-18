@@ -19,3 +19,7 @@ load.py
 test_HOGP.ipynb
 pde_data
 data/pred
+test_DMFAL.ipynb
+test_DRC.ipynb
+test_MFHOGP.ipynb
+test_SGPGN.ipynb

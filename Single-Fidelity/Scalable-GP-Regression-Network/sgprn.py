@@ -372,7 +372,7 @@ yte = torch.tensor(np.load('yte.npy')).to(device)
 
 input_dim = Xtr.shape[1]
 N = Xtr.shape[0]
-    
+print("input_dim: ", input_dim)
 model = ScalableGPRN(
     input_dim, 
     rank=20, 
@@ -408,4 +408,4 @@ for ie in tqdm(range(max_epochs)):
 
 
 Ys = model.forward_samples(Xtr, ytr, Xte, ns=5)
-
+print(Ys)

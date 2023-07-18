@@ -1,4 +1,0 @@
-% The compound noise model is a wrapper noise model for allowing each output 
-% of a the model to have a different noise model.
-%
-% SEEALSO : cmpndKernParamInit

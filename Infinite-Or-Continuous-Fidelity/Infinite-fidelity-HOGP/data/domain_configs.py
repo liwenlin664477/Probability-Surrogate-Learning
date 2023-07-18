@@ -118,10 +118,10 @@ EXP_DOMAIN_CONFIGS = {
         't_min':0.0,
         't_max':1.0,
         'fid_list_tr':[8, 16, 32, 64],
-        'ns_list_tr':[100, 50, 20, 5],
+        'ns_list_tr':[100, 50, 50, 20],
         'fid_list_te':[8, 16, 32, 64],
-        'ns_list_te':[128,128,128,128],
-        'interp':'bilinear',
+        'ns_list_te':[256, 256, 256, 256],
+        'interp':'linear',
         'target_fidelity': 64,
     },
     

@@ -68,6 +68,17 @@ def main(argv):
         ns_list_tr=config.data.ns_list_tr,
         ns_list_te=config.data.ns_list_te,
     )
+    # print("domain:", config.domain)
+    # print("fid_min:", config.data.fid_min)
+    # print("fid_max:", config.data.fid_max)
+    # print("t_min:", config.data.t_min)
+    # print("t_max:", config.data.t_max)
+    # print("target_fidelity:", config.data.target_fidelity)
+    # print("fid_list_tr:", config.data.fid_list_tr)
+    # print("fid_list_te:", config.data.fid_list_te)
+    # print("ns_list_tr:", config.data.ns_list_tr)
+    # print("ns_list_te:", config.data.ns_list_te)
+    # print("interp:", config.datafiles.interp)
 
     # print(f"dataset = MFData(\n"
     #       f"    config,\n"

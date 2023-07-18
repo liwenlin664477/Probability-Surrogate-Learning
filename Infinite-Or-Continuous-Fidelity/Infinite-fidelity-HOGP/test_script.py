@@ -10,19 +10,19 @@ def run_command(cmd):
         raise subprocess.CalledProcessError(p.returncode, p.args)
 
 # %%
-domain = "heat"
-method = "sf"
+domain = "Poisson"
+method = "hogp"
 rank = 5
 epochs = 5000
 
 domain_name = domain.lower()
 save_path = "__res_" + domain_name + "__"
 
-for fold in range(1, 2):
-    if method == "sf":
+for fold in range(1, 6):
+    if method == "hogp":
         run_command([
             "python", "main.py",
-            "--config=configs/" + domain_name + "/exp_sf.py",
+            "--config=configs/" + domain_name + "/exp_hogp.py",
             "--workdir=" + save_path,
             "--config.training.epochs=" + str(epochs),
             "--config.model.rank=" + str(rank),
