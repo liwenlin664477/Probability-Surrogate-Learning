@@ -14,3 +14,8 @@ __log__
 pde_data
 __res*
 DRC-pde-data
+load3D.py
+load.py
+test_HOGP.ipynb
+pde_data
+data/pred
