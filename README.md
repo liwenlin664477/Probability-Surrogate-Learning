@@ -204,6 +204,6 @@ IFC is released under the MIT License, please refer the LICENSE for details.
 ---
 
 ## Getting Involved
-Feel free to submit Github issues or pull requests. Welcome to contribute to our project!
+Feel free to submit Github issues or pull requests. Welcome to contribute to our library!
 
 To contact us, never hestitate to send an email to u1327012@umail.utah.edu or liwen0160@gmail.com
