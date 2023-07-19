@@ -14,6 +14,3 @@ __predicts__
 gp_pred
 .idea
 Active-Learning/BMFAL-BC/.DS_Store
-build
-dist
-Probability_Surrogate_Learning.egg-info
