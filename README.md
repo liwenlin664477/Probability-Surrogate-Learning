@@ -1,11 +1,6 @@
 # Probability-Surrogate-Learning
 This is a comprehensive machine learning library, specifically tailored for surrogate learning and active learning. Our objective is to provide a robust platform that empowers researchers and developers to seamlessly implement and experiment with these advanced machine learning techniques.
 
-You can directly install our library by running:
-```commandline
-pip install Probability-Surrogate-Learning==1.0
-```
-
 ---
 ## Active Learning Techniques
 ### [Deep Multi-fidelity Active Learning (DMFAL)](https://arxiv.org/abs/2012.00901)
