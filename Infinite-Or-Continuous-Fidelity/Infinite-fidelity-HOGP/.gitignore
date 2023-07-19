@@ -23,3 +23,13 @@ test_DMFAL.ipynb
 test_DRC.ipynb
 test_MFHOGP.ipynb
 test_SGPGN.ipynb
+Plot-Error-Fields-Burgers.ipynb
+Plot-Error-Fields-Heat.ipynb
+Plot-Error-Fields-Poisson.ipynb
+data/__freezed_predicts__
+predict.pickle
+predict.pkl
+Xte.npy
+Xtr.npy
+yte.npy
+ytr.npy

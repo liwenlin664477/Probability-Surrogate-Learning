@@ -3,7 +3,7 @@ This is a comprehensive machine learning library, specifically tailored for surr
 
 You can directly install our library by running:
 ```commandline
-pip install Probability-Surrogate-Learning==1.0
+pip install Probability-Surrogate-Learning==1.1
 ```
 
 ---

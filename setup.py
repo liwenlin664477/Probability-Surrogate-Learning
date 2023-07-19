@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="Probability-Surrogate-Learning",
-    version="1.0",
+    version="1.1",
     packages=find_packages(),
     author="Wenlin Li",
     author_email="u1327012@example.com",
