@@ -202,7 +202,7 @@ More information and instructions are in Data-Generator README.md.
 
 ---
 
-## Projects visualization
+## Results Visualization
 We have also made the result or loss visualization in all the projects. You are welcome to play with them by running jupyter notebook.
 
 ---
