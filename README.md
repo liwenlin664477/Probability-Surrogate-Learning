@@ -1,5 +1,5 @@
 # Probability-Surrogate-Learning
-This is a comprehensive machine learning library, specifically tailored for surrogate learning and active learning. Our objective is to provide a robust platform that empowers researchers and developers to seamlessly implement and experiment with these advanced machine learning techniques.
+The Probability-Surrogate-Learning (PSL) library is a comprehensive machine learning toolkit designed to improve predictions and enhance accuracy in physical models. It encompasses various methodologies and techniques that make it a versatile choice for different machine learning tasks, particularly in the physical sciences domain.
 
 You can directly install our library by running:
 ```commandline
@@ -8,6 +8,7 @@ pip install Probability-Surrogate-Learning==1.1
 
 ---
 ## Active Learning Techniques
+This component allows for interactive and adaptive learning, where the model selectively acquires the most beneficial data to learn from, based on its current understanding.
 ### [Deep Multi-fidelity Active Learning (DMFAL)](https://arxiv.org/abs/2012.00901)
 
 To run the code:
@@ -44,6 +45,7 @@ Please cite our work if you would like to use the code
 ---
 
 ## Single-Fidelity Techniques
+The Single Fidelity module is designed for standard machine learning tasks where all data is of the same level of accuracy.
 ### [Scalable GP Regression Network (SGPRN)](https://arxiv.org/abs/2003.11489)
 
 To run the code:
@@ -93,7 +95,8 @@ Please cite the paper if you find this code useful.
 ```
 ---
 
-## Multi-Fidelity 
+## Discrete-Multi-Fidelity 
+This module is designed to handle tasks where different levels of accuracy (and computational cost) are available. By combining high- and low-fidelity data, the model can make more accurate predictions with less computational effort.
 ### [Deep Residual Coregionalization (DRC)](https://arxiv.org/abs/1910.07577)
 To run the code:
 
@@ -156,6 +159,7 @@ TBD
 
 
 ## Infinite/Continuous-Fidelity 
+This component extends the multi-fidelity concept to situations where fidelity can be any real number, not just discrete levels. This can be useful in situations where there is a continuous scale of accuracy (and associated computational cost).
 ### [Infinite-Fidelity-Coregionalization(IFC)](https://openreview.net/forum?id=dUYLikScE-)
 To run the code:
 ```commandline
