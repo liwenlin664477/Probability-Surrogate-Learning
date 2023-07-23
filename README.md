@@ -45,7 +45,7 @@ Please cite our work if you would like to use the code
 ---
 
 ## Single-Fidelity Techniques
-The Single Fidelity module is designed for standard machine learning tasks where all data is of the same level of accuracy.
+The Single Fidelity module is designed for traditional machine learning tasks where all data is assumed to have uniform fidelity.
 ### [Scalable GP Regression Network (SGPRN)](https://arxiv.org/abs/2003.11489)
 
 To run the code:
