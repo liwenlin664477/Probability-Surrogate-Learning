@@ -5,7 +5,7 @@ setup(
     version="1.1",
     packages=find_packages(),
     author="Wenlin Li",
-    author_email="u1327012@example.com",
+    author_email="u1327012@utah.edu",
     description="This is a comprehensive machine learning library, "
                 "specifically tailored for surrogate learning and active learning.",
     long_description=open('README.md').read(),
