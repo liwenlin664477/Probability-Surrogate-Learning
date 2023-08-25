@@ -208,7 +208,7 @@ We have also made the result or loss visualization in all the projects. You are 
 ---
 
 ## License
-IFC is released under the MIT License, please refer the LICENSE for details.
+Probability-Surrogate-Learning is released under the MIT License, please refer the LICENSE for details.
 
 ---
 
